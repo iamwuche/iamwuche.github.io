@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css?family=roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+html {
+    font-family: Karla, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+body {
+    margin: 0;
+    background-color: #ffffff;
+    color: #4c5765;
+}
+
+#title {
+	background-color: white;
+	padding-top: 200px;
+	justify-content: space-around;
+	display: flex;
+	width: 100%;
+}
+
+#title h1{
+	 font-size: 50px;
+	 letter-spacing: 0.15em;
+	 font-weight: 600;
+	 color: #3258A6;
+	 margin: 0px;
+
+}
+
+#title img {
+	width: 270px;
+	height: 270px;
+
+}
+ 
+#button img{
+	width: 60px;
+	height: 30px;
+	background-color: white;
+	margin-left: 0px;
+	animation: down 1.5s ease infinite;
+}
+
+@keyframes down {
+	from{
+		transform: translate3d(0, 0, 0);
+	}
+	
+	to {
+		transform: translate3d(0, 30px, 0);
+	}
+}
+
+
+#grass img{ 
+	width: 100%; 
+	position: absolute;
+	bottom: 0px;
+}
+
+#homepage {
+	height: 100vh;
+}
+
+
+/**
+ * Fruit Page
+ */
+
+#fruit-page {
+	height: 100vh;
+	background: #CDDA4D;
+}
+
+#season h1{
+	font-size: 35px;
+	font-weight: 900;
+	color: #ffffff;
+    text-align: center;
+    margin:0;
+    padding:20px;
+}
+
+#fruit-page h2{ 
+	font-size: 30px;
+	color: #ffffff;
+	margin-left: 25px;
+	margin-top:30px;
+}
+
+#fruit-body  h3{
+	font-size: 14px;
+	font-weight: 300;
+	color: #ffffff;
+	margin-top: 50px;
+	margin-left:25px;
+
+}
+
+#fruit-body {
+	padding-top: 20px;
+	justify-content: space-around;
+	display: flex;
+	width: 100%;
+}
+
+#fruit-body img {
+	width: 150px;
+	height: 50px;
+	margin-top: 100px;
+	margin-left: 25px;
+}
+
+#fruit-page .berry-button {
+  background-color: white;
+  color: grey;
+  border: 3px solid #ffffff; 
+  padding:5px 25px;
+  border-radius: 5px;
+  font-size:15px;
+  margin-left:25px;
+  margin-top:150px;
+  transition-duration: 0.2s;
+
+}
+
+#fruit-page .berry-button:hover {
+  background-color: #B9BABB;
+  color: white;
+  box-shadow: 0 5px 5px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19)
+
+}
+
+#season-fruit img {
+	width: 350px;
+	height: 350px;
+	margin-top: 0px;
+	margin-left: 25px;
+	margin-right:25px;
+}
+
+.btn {
+    width: 20px;
+    height: 20px;
+    margin: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, 0.2);
+    transition: transform ease 0.2s;
+}
+
+.btn:hover {
+    transform: scale(1.2);
+}
+
+#btn-red {
+    background: #D62434;
+}
+
+#btn-yellow {
+    background: #F3A648;
+}
+
+#btn-green {
+    background: #CDDA4D;
+}
+
+#btn-blue {
+    background: #5961A1;
+}
+
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.popup .popuptext {
+  visibility: hidden;
+  width: 200px;
+  height:30px;
+  background-color: #fff;
+  font-size: 18px;
+  font-style: bold;
+  color: #555;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+#footer {
+	justify-content: center;
+	margin-top:120px;
+	display: flex;
+	width: 100%;
+
+}
